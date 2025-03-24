@@ -1,0 +1,118 @@
+{
+  "mappings": {
+    "immersive_aircraft/mixin/PlayerEntityMixin": {
+      "getDestroySpeed": "Lnet/minecraft/world/entity/player/Player;m_36281_(Lnet/minecraft/world/level/block/state/BlockState;)F",
+      "isScoping()Z": "Lnet/minecraft/world/entity/player/Player;m_150108_()Z",
+      "updatePlayerPose()V": "Lnet/minecraft/world/entity/player/Player;m_7594_()V",
+      "wantsToStopRiding": "Lnet/minecraft/world/entity/player/Player;m_36342_()Z"
+    },
+    "immersive_aircraft/mixin/ProjectileUtilMixin": {
+      "getEntityHitResult(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;D)Lnet/minecraft/world/phys/EntityHitResult;": "Lnet/minecraft/world/entity/projectile/ProjectileUtil;m_37287_(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;D)Lnet/minecraft/world/phys/EntityHitResult;",
+      "getEntityHitResult(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;F)Lnet/minecraft/world/phys/EntityHitResult;": "Lnet/minecraft/world/entity/projectile/ProjectileUtil;m_150175_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;F)Lnet/minecraft/world/phys/EntityHitResult;"
+    },
+    "immersive_aircraft/mixin/ServerPlayerEntityMixin": {
+      "containerSynchronizer": "f_143379_:Lnet/minecraft/world/inventory/ContainerSynchronizer;"
+    },
+    "immersive_aircraft/mixin/client/AbstractClientPlayerMixin": {
+      "getFieldOfViewModifier()F": "Lnet/minecraft/client/player/AbstractClientPlayer;m_108565_()F"
+    },
+    "immersive_aircraft/mixin/client/CameraMixin": {
+      "setup": "Lnet/minecraft/client/Camera;m_90575_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "immersive_aircraft/mixin/client/ClientPlayNetworkHandlerMixin": {
+      "handleSetEntityPassengersPacket(Lnet/minecraft/network/protocol/game/ClientboundSetPassengersPacket;)V": "Lnet/minecraft/client/multiplayer/ClientPacketListener;m_6403_(Lnet/minecraft/network/protocol/game/ClientboundSetPassengersPacket;)V"
+    },
+    "immersive_aircraft/mixin/client/ClientPlayerEntityMixin": {
+      "isCrouching()Z": "Lnet/minecraft/client/player/LocalPlayer;m_6047_()Z",
+      "sendOpenInventory()V": "Lnet/minecraft/client/player/LocalPlayer;m_108628_()V"
+    },
+    "immersive_aircraft/mixin/client/ClientPlayerInteractionManagerMixin": {
+      "isServerControlledInventory()Z": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_105292_()Z"
+    },
+    "immersive_aircraft/mixin/client/EntityRenderDispatcherMixin": {
+      "renderHitbox(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/entity/Entity;F)V": "Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;m_114441_(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/entity/Entity;F)V"
+    },
+    "immersive_aircraft/mixin/client/GameRendererMixin": {
+      "Lnet/minecraft/client/Camera;setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V": "Lnet/minecraft/client/Camera;m_90575_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V",
+      "renderLevel": "Lnet/minecraft/client/renderer/GameRenderer;m_109089_(FJLcom/mojang/blaze3d/vertex/PoseStack;)V"
+    },
+    "immersive_aircraft/mixin/client/GuiMixin": {
+      "renderCrosshair(Lnet/minecraft/client/gui/GuiGraphics;)V": "Lnet/minecraft/client/gui/Gui;m_280130_(Lnet/minecraft/client/gui/GuiGraphics;)V"
+    },
+    "immersive_aircraft/mixin/client/KeyMappingAccessorMixin": {
+      "clickCount": "f_90818_:I",
+      "key": "f_90816_:Lcom/mojang/blaze3d/platform/InputConstants$Key;"
+    },
+    "immersive_aircraft/mixin/client/KeyMappingMixin": {
+      "click(Lcom/mojang/blaze3d/platform/InputConstants$Key;)V": "Lnet/minecraft/client/KeyMapping;m_90835_(Lcom/mojang/blaze3d/platform/InputConstants$Key;)V",
+      "resetMapping()V": "Lnet/minecraft/client/KeyMapping;m_90854_()V",
+      "same(Lnet/minecraft/client/KeyMapping;)Z": "Lnet/minecraft/client/KeyMapping;m_90850_(Lnet/minecraft/client/KeyMapping;)Z",
+      "set(Lcom/mojang/blaze3d/platform/InputConstants$Key;Z)V": "Lnet/minecraft/client/KeyMapping;m_90837_(Lcom/mojang/blaze3d/platform/InputConstants$Key;Z)V"
+    },
+    "immersive_aircraft/mixin/client/LivingEntityRendererMixin": {
+      "setupRotations": "Lnet/minecraft/client/renderer/entity/LivingEntityRenderer;m_7523_(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;FFF)V"
+    },
+    "immersive_aircraft/mixin/client/PlayerEntityRendererMixin": {
+      "setModelProperties(Lnet/minecraft/client/player/AbstractClientPlayer;)V": "Lnet/minecraft/client/renderer/entity/player/PlayerRenderer;m_117818_(Lnet/minecraft/client/player/AbstractClientPlayer;)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "immersive_aircraft/mixin/PlayerEntityMixin": {
+        "getDestroySpeed": "Lnet/minecraft/world/entity/player/Player;m_36281_(Lnet/minecraft/world/level/block/state/BlockState;)F",
+        "isScoping()Z": "Lnet/minecraft/world/entity/player/Player;m_150108_()Z",
+        "updatePlayerPose()V": "Lnet/minecraft/world/entity/player/Player;m_7594_()V",
+        "wantsToStopRiding": "Lnet/minecraft/world/entity/player/Player;m_36342_()Z"
+      },
+      "immersive_aircraft/mixin/ProjectileUtilMixin": {
+        "getEntityHitResult(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;D)Lnet/minecraft/world/phys/EntityHitResult;": "Lnet/minecraft/world/entity/projectile/ProjectileUtil;m_37287_(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;D)Lnet/minecraft/world/phys/EntityHitResult;",
+        "getEntityHitResult(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;F)Lnet/minecraft/world/phys/EntityHitResult;": "Lnet/minecraft/world/entity/projectile/ProjectileUtil;m_150175_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;F)Lnet/minecraft/world/phys/EntityHitResult;"
+      },
+      "immersive_aircraft/mixin/ServerPlayerEntityMixin": {
+        "containerSynchronizer": "f_143379_:Lnet/minecraft/world/inventory/ContainerSynchronizer;"
+      },
+      "immersive_aircraft/mixin/client/AbstractClientPlayerMixin": {
+        "getFieldOfViewModifier()F": "Lnet/minecraft/client/player/AbstractClientPlayer;m_108565_()F"
+      },
+      "immersive_aircraft/mixin/client/CameraMixin": {
+        "setup": "Lnet/minecraft/client/Camera;m_90575_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+      },
+      "immersive_aircraft/mixin/client/ClientPlayNetworkHandlerMixin": {
+        "handleSetEntityPassengersPacket(Lnet/minecraft/network/protocol/game/ClientboundSetPassengersPacket;)V": "Lnet/minecraft/client/multiplayer/ClientPacketListener;m_6403_(Lnet/minecraft/network/protocol/game/ClientboundSetPassengersPacket;)V"
+      },
+      "immersive_aircraft/mixin/client/ClientPlayerEntityMixin": {
+        "isCrouching()Z": "Lnet/minecraft/client/player/LocalPlayer;m_6047_()Z",
+        "sendOpenInventory()V": "Lnet/minecraft/client/player/LocalPlayer;m_108628_()V"
+      },
+      "immersive_aircraft/mixin/client/ClientPlayerInteractionManagerMixin": {
+        "isServerControlledInventory()Z": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_105292_()Z"
+      },
+      "immersive_aircraft/mixin/client/EntityRenderDispatcherMixin": {
+        "renderHitbox(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/entity/Entity;F)V": "Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;m_114441_(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/entity/Entity;F)V"
+      },
+      "immersive_aircraft/mixin/client/GameRendererMixin": {
+        "Lnet/minecraft/client/Camera;setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V": "Lnet/minecraft/client/Camera;m_90575_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V",
+        "renderLevel": "Lnet/minecraft/client/renderer/GameRenderer;m_109089_(FJLcom/mojang/blaze3d/vertex/PoseStack;)V"
+      },
+      "immersive_aircraft/mixin/client/GuiMixin": {
+        "renderCrosshair(Lnet/minecraft/client/gui/GuiGraphics;)V": "Lnet/minecraft/client/gui/Gui;m_280130_(Lnet/minecraft/client/gui/GuiGraphics;)V"
+      },
+      "immersive_aircraft/mixin/client/KeyMappingAccessorMixin": {
+        "clickCount": "f_90818_:I",
+        "key": "f_90816_:Lcom/mojang/blaze3d/platform/InputConstants$Key;"
+      },
+      "immersive_aircraft/mixin/client/KeyMappingMixin": {
+        "click(Lcom/mojang/blaze3d/platform/InputConstants$Key;)V": "Lnet/minecraft/client/KeyMapping;m_90835_(Lcom/mojang/blaze3d/platform/InputConstants$Key;)V",
+        "resetMapping()V": "Lnet/minecraft/client/KeyMapping;m_90854_()V",
+        "same(Lnet/minecraft/client/KeyMapping;)Z": "Lnet/minecraft/client/KeyMapping;m_90850_(Lnet/minecraft/client/KeyMapping;)Z",
+        "set(Lcom/mojang/blaze3d/platform/InputConstants$Key;Z)V": "Lnet/minecraft/client/KeyMapping;m_90837_(Lcom/mojang/blaze3d/platform/InputConstants$Key;Z)V"
+      },
+      "immersive_aircraft/mixin/client/LivingEntityRendererMixin": {
+        "setupRotations": "Lnet/minecraft/client/renderer/entity/LivingEntityRenderer;m_7523_(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;FFF)V"
+      },
+      "immersive_aircraft/mixin/client/PlayerEntityRendererMixin": {
+        "setModelProperties(Lnet/minecraft/client/player/AbstractClientPlayer;)V": "Lnet/minecraft/client/renderer/entity/player/PlayerRenderer;m_117818_(Lnet/minecraft/client/player/AbstractClientPlayer;)V"
+      }
+    }
+  }
+}
